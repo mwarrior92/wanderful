@@ -2,11 +2,8 @@ import inspect
 import os
 import shutil
 import logging.config
-from ipwhois import IPWhois
-import datetime
 import json
 import tarfile
-import subprocess
 
 """
 NOTE: most of the helper functions are just to make main code less cluttered
@@ -303,3 +300,4 @@ def url_formatter(url):
     if '//' not in url:
         url = "http://"+url
     return url
+
